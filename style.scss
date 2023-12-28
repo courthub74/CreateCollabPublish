@@ -1,0 +1,225 @@
+// IMPORTED FONTS
+
+// INTER
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700');
+
+// COLORS
+
+$homegreen: #104D49;
+$fontwhite: #E1F2E1;
+
+$navbargreen: #014931;
+
+$appstorebuttons: #045B62;
+
+// DESKTOP
+@media screen and (min-width: 1000px) {
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+        body {
+            .container {
+                nav {
+                    background-color: $navbargreen;
+                    color: white;
+                    display: flex;
+                    justify-content: space-between;
+                    .menu {
+                        display: none;
+                    }
+                    .logo {
+                        padding: 2em;
+                        img {
+                            height: 3vh;
+                        }
+                    }
+                    ul {
+                        padding: 2em;
+                        li {
+                            display: inline;
+                            list-style: none;
+                            font-family: 'Inter', sans-serif;
+                            padding: 1.5vw;
+                            a {
+                                text-decoration: none;
+                                color: white;
+                                font-size: 1.3vw;
+                            }
+                            #signup {
+                                background-color: white;
+                                color: $navbargreen;
+                                padding: .5em;
+                                border-radius: 5px;
+                            }
+                            #login {
+                                border: 1px solid white;
+                                padding: .5em;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+                main {
+                    .header {
+                        background-color: $homegreen;
+                        color: $fontwhite;
+                        height: 100vh;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .logo {
+                            display: none;
+                        }
+                        .avatar {
+                            // margin: 0 0 0 5vw;
+                            padding: 15vh 0 0 8vw;
+                        }
+                        .headertext {
+                            font-size: 1.6vw;
+                        }
+                        .input {
+                            font-family: 'Inter', sans-serif;
+                            font-size: 1.5vw;
+                            margin: 2vh 0 0 -12vw;
+                        }
+                        #firstname {
+                            background-color: $homegreen;
+                            border: 2px solid $fontwhite;
+                            border-radius: 10px;
+                            width: 20vw;
+                            height: 2vw;
+                        }
+                    }
+                    .what {
+                        background-color: $fontwhite;
+                        color: $homegreen;
+                        height: 100vh;
+                    }
+                    .why {
+                        background-color: $homegreen;
+                        color: $fontwhite;
+                        height: 100vh;
+                    }
+                    .signup {
+                        background-color: $fontwhite;
+                        color: $homegreen;
+                        height: 100vh;
+                    }
+                    .howto {
+                        background-color: $homegreen;
+                        color: $fontwhite;
+                        height: 100vh;
+                    }
+                    footer {
+                        background-color: $navbargreen;
+                        color: $fontwhite;
+                        height: 50vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//SMARTPHONE
+
+@media only screen and (orientation: portrait) {
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        body {
+            .container {
+                .nav_section {
+                    background-color: $navbargreen;
+                    color: white;
+                    display: flex;
+                    justify-content: space-between;
+                    position: sticky;
+                    top: 0;
+                    width: 100%;
+                    z-index: 98;
+                    nav {
+                        .menu {
+                            padding: 5vw;
+                        }
+                        .logo {
+                            display: none;
+                            height: 1vh;
+                            width: 1vw;
+                            // background-color: yellow;
+                            img {
+                                height: 1vh;
+                                // background-color: yellow;
+                                // width: 3vh;
+                            }
+                        }
+                        ul {
+                            display: none;
+                        }
+                    }
+                }
+                main {
+                    .header {
+                        background-color: $homegreen;
+                        color: $fontwhite;
+                        height: 100vh;
+                        margin: 0vh 0 0 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        // background-color: yellow;
+                        .logo {
+                            display: flex;
+                            justify-content: center;
+                            padding: 0vh 0 0 0;
+                            // background-color: yellow;
+                            margin: -55vh 0 0 0;
+                        }
+                        .headertext {
+                            font-family: 'Inter', sans-serif;
+                            font-size: 3.5vw;
+                        }
+                        .input {
+                            font-family: 'Inter', sans-serif;
+                            font-size: 5vw;
+                            margin: 2vh 0 0 -14vw;
+                        }
+                        #firstname {
+                            background-color: $homegreen;
+                            border: 2px solid $fontwhite;
+                            border-radius: 10px;
+                        }
+                    }
+                    .what {
+                        background-color: $fontwhite;
+                        color: $homegreen;
+                        height: 100vh;
+                    }
+                    .why {
+                        background-color: $homegreen;
+                        color: $fontwhite;
+                        height: 100vh;
+                    }
+                    .signup {
+                        background-color: $fontwhite;
+                        color: $homegreen;
+                        height: 100vh;
+                    }
+                    .howto {
+                        background-color: $homegreen;
+                        color: $fontwhite;
+                        height: 100vh;
+                    }
+                    footer {
+                        background-color: $navbargreen;
+                        color: $fontwhite;
+                        height: 50vh;
+                    }
+                }
+            }
+        }
+    }
+}
